@@ -200,7 +200,7 @@ f</code></pre>
 have different incomes. Create a graph to display your data that
 includes the relevant means and standard errors.-->
 <p>Let’s see if party affiliation and sex predict incomes independently or in an interaction using a 2-way between-subjects ANOVA.</p>
-<pre class="r"><code> summary(aov(income~party*sex,data=pols[pols$testtime==&quot;pre&quot;,]))</code></pre>
+<pre class="r"><code> summary(aov(income~party*sex,data=pols[pols$testtime==&quot;post&quot;,]))</code></pre>
 <pre><code>##             Df Sum Sq Mean Sq F value Pr(&gt;F)  
 ## party        2   3973  1986.7   4.544 0.0145 *
 ## sex          1   1563  1563.0   3.575 0.0635 .
