@@ -160,7 +160,7 @@ Let's see if party affiliation and sex predict incomes independently
 or in an interaction using a 2-way between-subjects ANOVA.
 
 ```{r}
- summary(aov(income~party*sex,data=pols[pols$testtime=="pre",]))
+ summary(aov(income~party*sex,data=pols[pols$testtime=="post",]))
 ```
 
 Income is related to party affiliation, F(2, 60) = 4.54, p = .015, but not
